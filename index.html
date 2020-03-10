@@ -302,7 +302,37 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="第一节"><a href="#第一节" class="headerlink" title="第一节"></a>第一节</h2><h2 id="第二节"><a href="#第二节" class="headerlink" title="第二节"></a>第二节</h2><h2 id="第三节"><a href="#第三节" class="headerlink" title="第三节"></a>第三节</h2><h2 id="第四节"><a href="#第四节" class="headerlink" title="第四节"></a>第四节</h2><h2 id="第五节"><a href="#第五节" class="headerlink" title="第五节"></a>第五节</h2><h2 id="第二十五节"><a href="#第二十五节" class="headerlink" title="第二十五节"></a>第二十五节</h2><ol>
+        <h2 id="第一节"><a href="#第一节" class="headerlink" title="第一节"></a>第一节</h2><h2 id="第二节"><a href="#第二节" class="headerlink" title="第二节"></a>第二节</h2><h2 id="第三节"><a href="#第三节" class="headerlink" title="第三节"></a>第三节</h2><h2 id="第四节"><a href="#第四节" class="headerlink" title="第四节"></a>第四节</h2><h2 id="第五节"><a href="#第五节" class="headerlink" title="第五节"></a>第五节</h2><h2 id="第六节"><a href="#第六节" class="headerlink" title="第六节"></a>第六节</h2><h2 id="第七节"><a href="#第七节" class="headerlink" title="第七节"></a>第七节</h2><h2 id="第八节"><a href="#第八节" class="headerlink" title="第八节"></a>第八节</h2><h2 id="第九节"><a href="#第九节" class="headerlink" title="第九节"></a>第九节</h2><ol>
+<li><p>标签里面不能有子标签的叫<strong>空标签</strong>，如果想在空标签里面写东西，可以用value属性赋值</p>
+</li>
+<li><p>据说2020年会有个grid布局</p>
+</li>
+<li><p>不要因为别人长得像button就下意识认为选用button，例如<code>&lt;a&gt;</code>标签就很像按钮</p>
+</li>
+<li><p>【CSS】宽度和高度的规律很不一样</p>
+</li>
+<li><p>iframe可以和a结合用，iframe里面可以添加属性name，用于被外部控制，a添加属性target，指向iframe的name属性，从而控制iframe显示页面</p>
+</li>
+<li><p>如果a标签用于下载，要么是html里面请求的content-type为下载的类型，或者在a标签里面加download</p>
+</li>
+<li><p>a标签里面的href，如果什么都不写，点击则是刷新自身，如果写#则是锚点，如果写//则是跟随当前文件的协议，所以引用外部网址最好写上”https”；如果写javascript则是伪协议，例如写javascript:;则是点击之后不需要跳转等啥都不动，如果写javascript:alert(1)则是执行这个代码（弹窗）</p>
+</li>
+<li><p>获取用a标签，上传用form标签，都是用来发请求的</p>
+</li>
+<li><p>form标签里面如果没有提交按钮(子标签input里面的type属性为submit)，就无法提交form，除非用js，方方用method属性控制请求是get还是post；get会把参数默认放到（URL）查询参数里面</p>
+</li>
+<li><p>多个input标签如果用同一个name，则是单选框</p>
+</li>
+<li><p>【奇思妙想】路径不等于文件，理解，可能是把数据添加到文件里面，同样也有可能是把数据生成到某个路径（创建用户），胆子再大点，文件本身就是一个微观的路径</p>
+</li>
+<li><p>file协议不支持post</p>
+</li>
+<li><p>通常情况下form里面必须type属性为sumbit的button标签，用于post数据，如果仅有一个button且type为空，type则会自动变成submit，如果强行给这个button添加非sumbit的type属性，则按照type执行，不能post数据，所以这属于发神经的操作</p>
+</li>
+<li><p>table比较少用，非常多子标签，th标签和td标签(title hand 和title date 形式一样，只是标签的语义化不同)</p>
+</li>
+</ol>
+<h2 id="第十节"><a href="#第十节" class="headerlink" title="第十节"></a>第十节</h2><h2 id="第十一节"><a href="#第十一节" class="headerlink" title="第十一节"></a>第十一节</h2><h2 id="第二十五节"><a href="#第二十五节" class="headerlink" title="第二十五节"></a>第二十五节</h2><ol>
 <li>关于API的教学最好看MDN，MDN里面的方括号一般表示可选(可不选)的意思</li>
 <li>以哈希表为例，里面分为标准库和非标准库；标准库里面有且不限于Object、Array、Number、String等API；</li>
 <li>对于基本类型（String、Number、Boolean、Null、Undefined、还有一个S？），以String为例，调用String(1)的结果是常量1，依然是基本类型，而new String(1)则是返回一个1的对象，可以理解为针对基本类型，前面有new的话就是形成对象的标志，反之则是保留基本类型。</li>
@@ -324,6 +354,72 @@
 <li>Array.reduce，遍历，接受3个参数，分别为输入累计值、下一值、设定终值，因此功能强大可以代替map、filter、forEach</li>
 <li>目前理解为API可以输入的数据是确定的，不需要纠结，但既然有return这一存在，就有调整自己想要的结果的空间</li>
 </ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2020/03/05/hello-world/" class="article-date">
+      <time datetime="2020-03-05T13:52:55.828Z" itemprop="datePublished">2020-03-05</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2020/03/05/hello-world/">Hello World</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       
     </div>
@@ -382,72 +478,6 @@
       
           
         <h2 id="摆正车头不翻车"><a href="#摆正车头不翻车" class="headerlink" title="摆正车头不翻车"></a>摆正车头不翻车</h2>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/2020/03/05/hello-world/" class="article-date">
-      <time datetime="2020-03-05T13:24:34.116Z" itemprop="datePublished">2020-03-05</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2020/03/05/hello-world/">Hello World</a>
-    </h1>
-  
-
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
       
     </div>
     
